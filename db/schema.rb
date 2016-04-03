@@ -11,7 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160402043515) do
+ActiveRecord::Schema.define(version: 20160403030657) do
+
+  create_table "comments", force: :cascade do |t|
+    t.string   "user_name"
+    t.text     "body"
+    t.integer  "idea_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer  "like_count"
+    t.string   "picture"
+  end
 
   create_table "high_scores", force: :cascade do |t|
     t.string   "game"
