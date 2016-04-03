@@ -12,8 +12,12 @@
  *
  *= require_tree .
  *= require_self
+ *= require header
  */
-body { padding-top: 100px; }
-footer { margin-top: 100px; }
+body { padding-top: 60px; color: #651A1A}
+footer { margin-top: 100px;}
 table, td, th { vertical-align: middle; border: 1px solid red; padding: 10px}
 th { border-bottom: 1px solid #DDD; }
+.container h1 {padding-left: 35%;
+               font-size: 60px;
+}

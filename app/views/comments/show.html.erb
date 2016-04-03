@@ -1,4 +1,4 @@
-<p id="notice"><%= notice %></p>
+
 
 <p>
   <strong>User name:</strong>
@@ -14,6 +14,6 @@
   <strong>Idea:</strong>
   <%= @comment.idea_id %>
 </p>
-
+<%= image_tag(@comment.picture_url, :width => 600) if @comment.picture.present? %>
 <%= link_to 'Edit', edit_comment_path(@comment) %> |
 <%= link_to 'Back', comments_path %>
